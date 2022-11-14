@@ -1,29 +1,5 @@
 # Laboratory 10
 
-## Laboratory Objectives
-1. Explore and use various tools such as: GitHub, VirtualBox, Tuffix, Linux Terminal, and Atom.
-1. Write a Python program using:
-     1. threading
-1. Run and test a Python program.
-
-## Getting Started
-1. Open the Terminal program in Tuffix.
-1. Change the present working directory to the `Documents` directory by typing the following command at the command prompt:
-
-    ```
-    cd Documents
-    ```
-
-1. Make a copy of this Github repository on your computer using the `git` and `clone` commands that you will input to the terminal. The commands take a URL as a parameter to specify where it can get a copy of the repository. You can find the URL by clicking on the green *Clone or download* button at the top right part of this page. Copy the URL and replace the example text shown below. Note that `username` should be replaced with your own Github username. When you hit <kbd>Enter</kbd> it will ask you to provide your Github username and token. Once done, you will have a copy of the repository on your computer.
-    ```
-    git clone https://github.com/CSUF-CPSC223P-STMAY-2021F/lab10-username.git
-    ```
-1. Navigate into the new directory using the command line. Note that `username` should be replaced with your own Github username.  As a shortcut, you can type the first few letters of the folder name and press <kbd>Tab</kbd> so that it auto completes the folder name for you.
-
-     ```
-     cd lab10-username
-     ```
-     
 ## Program Instructions
 1. Write a Python program that performs as a Tuffy Titan Warehouse Robot.  Think of the warehouse similar to a large Amazon Fulfillment Center with thousands of robots moving around the facility to fill up a physical shopping cart.  A user via the web or an app selects several items they want to purchase.  The list is sent to a robot clerk, who in turns dispatches several robots that fetch the items and bring them back to the cart.  The robots work simultaneous i.e. in parallel with each other.  Once all the items are returned to the cart the items in the cart get shipped out for delivery.  The Tuffy Titan Warehouse Robot will simulate this workflow using multiple threads (each fetch robot will use a different thread).
 1. Your are given an `inventory.dat` file which contains a dictionary of inventory items.  The data structure and file contents is as follows:
@@ -96,19 +72,10 @@
 1. Run the unit testing program to ensure that your program runs as expected.  **NOTE: This may take approximately 45 seconds to complete due to the many sleeps that will be executed. It may appear to hang at the end, however it is actually going through the complete process a second time after the unit test finishes - be patient**  
 
     ```
-    ./test.sh
+    python3 -m test
     ```
        
-    The unit testing will output the results of a series of tests using specific input and expected output.  Any error will provide information on where the expected output is different from the actual output.  You will need to edit your source code to fix the error and run `./test.sh` repeatedly until it passes all the test.
-
-## Submission
-Periodically throughout the exercise, and when you have completed the exercise, **submit the complete repository to Github**.
-
-   <pre>git add .<br>git commit -m "<i>your comment</i>"<br>git push</pre>
-
-In case it asks you  to configure global variables for an email and name, just copy the commands it provides then replace the dummy text with your email and Github token.
-
-   <pre>git config --global user.email "<i>tuffy@csu.fullerton.edu</i>"<br>git config --global user.name "<i>Tuffy Titan</i>"<br>git commit -m "<i>your comment</i>"<br>git push</pre>
+    The unit testing will output the results of a series of tests using specific input and expected output.  Any error will provide information on where the expected output is different from the actual output.  You will need to edit your source code to fix the error and run `python3 -m test` repeatedly until it passes all the test.
 
 When you completed the final Github push, go back into github.com through the browser interface and ensure all your files have been correctly updated.  You should have the following files:
 ```
