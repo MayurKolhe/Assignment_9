@@ -1,4 +1,4 @@
-# Laboratory 10
+# Laboratory 9
 
 ## Program Instructions
 1. Write a Python program that performs as a Tuffy Titan Warehouse Robot.  Think of the warehouse similar to a large Amazon Fulfillment Center with thousands of robots moving around the facility to fill up a physical shopping cart.  A user via the web or an app selects several items they want to purchase.  The list is sent to a robot clerk, who in turns dispatches several robots that fetch the items and bring them back to the cart.  The robots work simultaneous i.e. in parallel with each other.  Once all the items are returned to the cart the items in the cart get shipped out for delivery.  The Tuffy Titan Warehouse Robot will simulate this workflow using multiple threads (each fetch robot will use a different thread).
